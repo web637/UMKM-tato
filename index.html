@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Magic Ink — Temporary Tattoo Studio</title>
+<meta name="description" content="Tattoo temporary dari bahan alami extract buah jagua. Needle free, no pain & wudhu friendly. Tahan 1–3 minggu.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://web189.github.io/Magic-Ink/">
+<meta property="og:title" content="Magic Ink — Temporary Tattoo Studio">
+<meta property="og:description" content="Tattoo temporary dari bahan alami extract buah jagua. Tahan 1–3 minggu. Needle free & wudhu friendly.">
+<meta property="og:image" content="https://web189.github.io/Magic-Ink/img/preview.jpg">
+
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- FLOATING ORBS -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- FLOATING WA -->
+<a href="https://wa.me/628881190614" target="_blank" class="float-wa" title="Chat WhatsApp">
+  <img src="img/whatsapp.png" alt="WhatsApp">
+</a>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-box">
+    <img src="img/logo.png" class="logo-load" alt="Magic Ink">
+    <div class="load-bar">
+      <div class="load-fill" id="loadFill"></div>
+    </div>
+    <span class="load-text">LOADING...</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<header class="nav" id="mainNav">
+  <img src="img/logo.png" class="logo" alt="Magic Ink">
+  <div class="nav-right">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/magicinktattootemporary" target="_blank" class="social-btn">
+        <img src="img/ig.png" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/@magicinktattootemporary" target="_blank" class="social-btn">
+        <img src="img/tiktok.png" alt="TikTok">
+      </a>
+      <a href="https://wa.me/628881190614" target="_blank" class="social-btn whatsapp">
+        <img src="img/whatsapp.png" alt="WhatsApp">
+      </a>
+    </div>
+    <button class="btn neon-btn fx" onclick="scrollBooking()">BOOKING</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="video/bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">JAKARTA · TEMPORARY TATTOO STUDIO</p>
+    <h1>MAGIC INK</h1>
+    <p class="hero-sub">Art Without Commitment</p>
+    <div class="hero-divider"></div>
+    <div class="hero-badges">
+      <span class="badge">NEEDLE FREE</span>
+      <span class="badge">NO PAIN</span>
+      <span class="badge">WUDHU FRIENDLY</span>
+      <span class="badge">1–3 WEEKS</span>
+    </div>
+    <div class="hero-cta">
+      <button class="btn btn-cta big fx" onclick="scrollBooking()">BOOK NOW</button>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span class="ticker-item">JAGUA EXTRACT <span class="dot">◆</span></span>
+    <span class="ticker-item">TAHAN 1–3 MINGGU <span class="dot">◆</span></span>
+    <span class="ticker-item">NEEDLE FREE <span class="dot">◆</span></span>
+    <span class="ticker-item">WUDHU FRIENDLY <span class="dot">◆</span></span>
+    <span class="ticker-item">NO PAIN <span class="dot">◆</span></span>
+    <span class="ticker-item">IMPORT QUALITY <span class="dot">◆</span></span>
+    <span class="ticker-item">TEMPORARY TATTOO <span class="dot">◆</span></span>
+    <span class="ticker-item">PIERCING STUDIO <span class="dot">◆</span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item">JAGUA EXTRACT <span class="dot">◆</span></span>
+    <span class="ticker-item">TAHAN 1–3 MINGGU <span class="dot">◆</span></span>
+    <span class="ticker-item">NEEDLE FREE <span class="dot">◆</span></span>
+    <span class="ticker-item">WUDHU FRIENDLY <span class="dot">◆</span></span>
+    <span class="ticker-item">NO PAIN <span class="dot">◆</span></span>
+    <span class="ticker-item">IMPORT QUALITY <span class="dot">◆</span></span>
+    <span class="ticker-item">TEMPORARY TATTOO <span class="dot">◆</span></span>
+    <span class="ticker-item">PIERCING STUDIO <span class="dot">◆</span></span>
+  </div>
+</div>
+
+<!-- INFO BANNER -->
+<section class="info-banner">
+  <div class="info-wrapper reveal">
+    <p class="info-label">— TENTANG PRODUK KAMI —</p>
+    <p>
+      Tattoo temporary kami Import Quality, terbuat dari bahan alami
+      <strong>extract buah jagua</strong>. Karena berbahan alami, kepekatan warna
+      yang dihasilkan akan berbeda tergantung jenis kulit & perawatannya.
+    </p>
+    <p>
+      Warna akan semakin pekat <strong>8–48 jam</strong> setelah pemasangan,
+      umumnya bertahan sekitar <strong>1–3 minggu</strong> tergantung jenis kulit.
+    </p>
+
+    <div class="info-tips">
+      <div class="tip-card reveal reveal-delay-1">
+        <span class="tip-icon">🚫</span>
+        <p>Hindari penggunaan lotion & oil pada area tattoo</p>
+      </div>
+      <div class="tip-card reveal reveal-delay-2">
+        <span class="tip-icon">🚿</span>
+        <p>Jangan menggosok keras dengan spon saat mandi</p>
+      </div>
+      <div class="tip-card reveal reveal-delay-3">
+        <span class="tip-icon">✋</span>
+        <p>Hindari mengupas sisa tattoo yang mengering</p>
+      </div>
+    </div>
+
+    <div class="info-highlight">
+      ✦ &nbsp; NEEDLE FREE &nbsp;&nbsp;·&nbsp;&nbsp; NO PAIN &nbsp;&nbsp;·&nbsp;&nbsp; WUDHU FRIENDLY &nbsp; ✦
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section" style="padding: 40px 40px 0;">
+  <div class="stats-row reveal">
+    <div class="stat-item">
+      <div class="stat-number" data-target="500">0</div>
+      <div class="stat-label">HAPPY CLIENTS</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="3">0</div>
+      <div class="stat-label">WEEKS LASTING</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="2">0</div>
+      <div class="stat-label">STUDIO LOCATIONS</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="100">0</div>
+      <div class="stat-label">% NATURAL JAGUA</div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE AFTER -->
+<section class="section" id="before-after">
+  <span class="section-label reveal">— TRANSFORMASI —</span>
+  <h2 class="reveal">Before & After</h2>
+
+  <div class="ba-wrapper reveal">
+    <div class="ba-container">
+      <img src="img/before.jpg" class="before" alt="Before">
+      <div class="after" id="afterImg">
+        <img src="img/after.jpg" alt="After" style="width:auto;min-width:100%;height:100%;max-width:none;">
+      </div>
+      <span class="ba-label left">BEFORE</span>
+      <span class="ba-label right">AFTER</span>
+    </div>
+    <div class="ba-slider-wrap">
+      <input type="range" min="0" max="100" value="50" id="slider">
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="section" id="portfolio">
+  <span class="section-label reveal">— KARYA KAMI —</span>
+  <h2 class="reveal">Portfolio</h2>
+
+  <div class="filter-buttons reveal">
+    <button onclick="filterGallery('all', event)" class="active">ALL WORKS</button>
+    <button onclick="filterGallery('tattoo', event)">TATTOO</button>
+    <button onclick="filterGallery('piercing', event)">PIERCING</button>
+  </div>
+
+  <h3 class="gallery-title">Tattoo Works</h3>
+  <div class="gallery-grid" id="tattooGrid">
+    <div class="gallery-item tattoo">
+      <img src="img/p1.jpg" alt="Tattoo 1">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p2.jpg" alt="Tattoo 2">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p3.jpg" alt="Tattoo 3">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p4.jpg" alt="Tattoo 4">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p5.jpg" alt="Tattoo 5">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p6.jpg" alt="Tattoo 6">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p7.jpg" alt="Tattoo 7">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p8.jpg" alt="Tattoo 8">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p9.jpg" alt="Tattoo 9">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p10.jpg" alt="Tattoo 10">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p11.jpg" alt="Tattoo 11">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p12.jpg" alt="Tattoo 12">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p13.jpg" alt="Tattoo 13">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p14.jpg" alt="Tattoo 14">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p15.jpg" alt="Tattoo 15">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item tattoo">
+      <img src="img/p16.jpg" alt="Tattoo 16">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+  </div>
+
+  <h3 class="gallery-title" style="margin-top: 50px;">Piercing Works</h3>
+  <div class="gallery-grid">
+    <div class="gallery-item piercing">
+      <img src="img/p17.jpg" alt="Piercing 1">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item piercing">
+      <img src="img/p18.jpg" alt="Piercing 2">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item piercing">
+      <img src="img/p19.jpg" alt="Piercing 3">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item piercing">
+      <img src="img/p20.jpg" alt="Piercing 4">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item piercing">
+      <img src="img/p21.jpg" alt="Piercing 5">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item piercing">
+      <img src="img/p22.jpg" alt="Piercing 6">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+    <div class="gallery-item piercing">
+      <img src="img/p23.jpg" alt="Piercing 7">
+      <div class="gallery-overlay"><span>VIEW ↗</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <span class="lightbox-close">[ CLOSE ]</span>
+  <img id="lightbox-img" alt="Preview">
+</div>
+
+<!-- PRICE LIST -->
+<section class="price-section" id="price">
+  <span class="section-label reveal">— INVESTASI SENI —</span>
+  <h2 class="section-title reveal" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,6vw,72px);letter-spacing:3px;">Our Price List</h2>
+
+  <div class="price-container">
+
+    <div class="price-box reveal reveal-delay-1">
+      <h3>🎨 Tattoo Price</h3>
+      <ul>
+        <li><span>Small Ink Premium</span><b>Rp 15K</b></li>
+        <li><span>Small Premium</span><b>Rp 30K</b></li>
+        <li><span>Armband Premium</span><b>Rp 40K</b></li>
+        <li><span>Medium Premium</span><b>Rp 45K</b></li>
+        <li><span>Wings Premium</span><b>Rp 70K</b></li>
+        <li><span>Half Arm Premium</span><b>Rp 80K</b></li>
+        <li><span>Full Hand Premium</span><b>Rp 90K</b></li>
+        <li><span>Full Back Premium</span><b>Rp 130K</b></li>
+        <li><span>Small Basic</span><b>Rp 10K</b></li>
+        <li><span>Medium Basic</span><b>Rp 30K</b></li>
+        <li><span>Big Basic</span><b>Rp 35K</b></li>
+        <li><span>Full Back Basic</span><b>Rp 110K</b></li>
+      </ul>
+    </div>
+
+    <div class="price-box reveal reveal-delay-2">
+      <h3>💎 Piercing Price</h3>
+      <ul>
+        <li><span>Lobe / Upper Lobe</span><b>150K</b></li>
+        <li><span>Triple Lobe</span><b>150K</b></li>
+        <li><span>Helix / Forward Helix</span><b>200K</b></li>
+        <li><span>Anti Helix / Flat</span><b>200K</b></li>
+        <li><span>Conch / Rook</span><b>250K</b></li>
+        <li><span>Daith / Tragus</span><b>300K</b></li>
+        <li><span>Industrial</span><b>350K</b></li>
+      </ul>
+      <p class="note">* Included basic earring</p>
+    </div>
+
+  </div>
+
+  <div class="open-hours reveal" style="margin-top: 60px;">
+    <h3>🕒 OPEN DAILY</h3>
+    <p>11:00 AM – 11:00 PM</p>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="section">
+  <span class="section-label reveal">— RESERVASI —</span>
+  <h2 class="reveal">Booking</h2>
+  <p class="reveal" style="color:var(--text-muted);font-size:16px;margin-top:12px;font-style:italic;">Isi form di bawah, kami akan menghubungi via WhatsApp</p>
+
+  <div class="booking reveal">
+    <input id="nama" placeholder="Nama Kamu" type="text">
+    <input id="desain" placeholder="Desain yang Kamu Inginkan" type="text">
+    <select id="jenis">
+      <option value="Basic">Basic</option>
+      <option value="Premium">Premium</option>
+    </select>
+    <button onclick="kirim()" class="fx">
+      KIRIM BOOKING VIA WHATSAPP ↗
+    </button>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="map-section reveal" id="location">
+  <span class="section-label">— TEMUKAN KAMI —</span>
+  <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,6vw,72px);letter-spacing:3px;">Our Locations</h2>
+
+  <div class="map-container">
+    <div class="map-card reveal reveal-delay-1">
+      <h3>📍 Magic Ink 1 — CBD Ciledug</h3>
+      <iframe
+        src="https://maps.google.com/maps?q=Magic%20Ink%201%20CBD%20Ciledug&output=embed"
+        loading="lazy" title="Magic Ink Ciledug">
+      </iframe>
+      <a href="https://maps.google.com/?q=Magic%20Ink%201%20CBD%20Ciledug" target="_blank" class="map-btn">
+        BUKA DI GOOGLE MAPS ↗
+      </a>
+    </div>
+
+    <div class="map-card reveal reveal-delay-2">
+      <h3>📍 Magic Ink 2 — Ciputat</h3>
+      <iframe
+        src="https://maps.google.com/maps?q=Magic%20Ink%202%20Ciputat&output=embed"
+        loading="lazy" title="Magic Ink Ciputat">
+      </iframe>
+      <a href="https://maps.google.com/?q=Magic%20Ink%202%20Ciputat" target="_blank" class="map-btn">
+        BUKA DI GOOGLE MAPS ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="img/logo.png" alt="Magic Ink">
+    </div>
+    <p class="copyright">© 2026 MAGIC INK. ALL RIGHTS RESERVED.</p>
+    <p class="powered">
+      WEBSITE BY
+      <a href="https://web921.github.io/M-DAUD-S.M/" target="_blank" class="ig-credit">
+        <i class="fab fa-instagram"></i> @BENYORIKI
+      </a>
+    </p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
